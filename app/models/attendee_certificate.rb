@@ -1,0 +1,2 @@
+class AttendeeCertificate < ApplicationRecord
+end
