@@ -1,1 +1,43 @@
+<%= form_for @webinar, class: "col-md-12" do |webinar| %>
+  <fieldset class="formStyle">
+    <div class="formRowSize">
+      <div class="form-row">
+        <div class="form-group col-lg-10">
+          <label>Webinar Name:</label>
+          <%= webinar.text_field 'name', class: "form-control", required: true, placeholder: "Webinar Name" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-10">
+          <label>Date:</label>
+          <%= webinar.text_field 'date', class: "form-control", required: true, placeholder: "Date" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-10">
+          <label>Speaker Name:</label>
+          <%= webinar.text_field 'speaker', class: "form-control", required: true, placeholder: "Speaker Name" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-10">
+          <label>HashTag:</label>
+          <%= webinar.text_field 'hashtag', class: "form-control", required: true, placeholder: "HashTag" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-lg-10">
+          <label>File Name:</label>
+          <%= webinar.file_field 'file', class: "form-control", required: true, placeholder: "File Name" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group mbFullWd col-auto">
+          <button type="submit" class="btn btn-primary" name= "commit" value= "Save & Close" data-turbolinks="false">Send Certificate</button>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+<% end %>
+
 <%= link_to 'Send Certificate', send_certificate_certificates_path %>

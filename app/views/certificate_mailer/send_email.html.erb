@@ -4,18 +4,11 @@
 <head>
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Test Email Title</title>
   <style>
     /* -------------------------------------
         CUSTOM CSS
     ------------------------------------- */
     .wrapper a{
-      background-color: #2ed573;
-      border-color: #2ed573;
-      color: #ffffff;
-      border: solid 1px #2ed573;
-      border-radius: 5px;
-      box-sizing: border-box;
       cursor: pointer;
       display: inline-block;
       font-size: 14px;
@@ -133,7 +126,21 @@
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                 <tr>
                   <p class="email-body">
-                    This is the body
+                    Dear <%= params[:name]%>,<br>
+                    Greetings from Modern Group of Institutions,<br>
+                    Thank you for attending the National Webinar on #ModernTalk <%= @ask%> Organized by Modern Group of Institutions, Indore.<br>
+                    Attached here with, You can find the E-Certificate for the same.
+                    <br><br>
+                    Regards,<br>
+                    Modern Group of Institutions, Indore<br>
+                    (Shree Prabhat Chandra Kharia Research & Educationa Society)<br>
+                    Management | Pharmacy | Commerce | Education | CBSE School<br>
+                    Affiliation to DAVV, RGPV, Approved by AICTE, DTE, PCI, NCTE.<br><br>
+                    Modern Campus, Alwasa, Sanwer Road, Behind Rewti Range Indore (M.P.)<br>
+                    Phone: 7354880702/733/734/735/703/836, 7489902116<br>
+                    Email: info@moderninstitutes.in<br>
+                    Web: www.moderninstitutes.in<br>
+                    Social Media: @mipsindore, @misindore
                   </p>
                 </tr>
               </table>
@@ -148,7 +155,7 @@
           <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
             <tr>
               <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                Powered by <a href="http://www.moderninstitutes.in/" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Modern Institutions</a>.
+                Powered by <a href="http://www.moderninstitutes.in/" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Modern Group of Institutions</a>.
               </td>
             </tr>
           </table>

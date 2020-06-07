@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_06_100607) do
+ActiveRecord::Schema.define(version: 2020_06_07_113051) do
 
   create_table "attendee_certificates", force: :cascade do |t|
     t.integer "attendee_id"
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(version: 2020_06_06_100607) do
 
   create_table "certificates", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "webinars", force: :cascade do |t|
+    t.string "name"
+    t.string "hashtag"
+    t.string "date"
+    t.string "speaker"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

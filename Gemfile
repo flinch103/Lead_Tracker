@@ -58,3 +58,4 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'sendgrid-actionmailer'
 gem 'sendgrid-ruby'
+gem "roo", "~> 2.8.0"
