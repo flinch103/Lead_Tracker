@@ -12,13 +12,13 @@
         background-image: url('<%= Rails.root.join('app/assets/images', 'certificate.jpg')%>');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 800px 800px;
+        background-size: 1500px 900px;
         padding: 250px !important;
     }
 
     .topic {
-      margin-left: 180px !important;
-      margin-top: 10px !important;
+      margin-left: 380px !important;
+      margin-top: 22px !important;
     }
 
     .name {
@@ -28,7 +28,7 @@
     }
 
     .speaker {
-      padding-top: 2px !important;
+      padding-top: 5px !important;
     }
 
     .date {
@@ -187,8 +187,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12" style="width: 500px !important;">
-          <p style="color: #0A3359;font-weight: bold;" class="speaker"><%= speaker %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= date %></p>
+        <div class="col-12" style="width: 900px !important;">
+          <p style="color: #0A3359;font-weight: bold;" class="speaker"><%= speaker %><% (0..206-speaker.length).each do |index|%> &nbsp;<% end %><%= date %></p>
           
         </div>
         <div class="col-6">
