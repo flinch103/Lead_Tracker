@@ -12,13 +12,13 @@
         background-image: url('<%= Rails.root.join('app/assets/images', 'certificate.jpg')%>');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 1500px 900px;
+        background-size: 800px 800px;
         padding: 250px !important;
     }
 
     .topic {
-      margin-left: 380px !important;
-      margin-top: 22px !important;
+      margin-left: 180px !important;
+      margin-top: 10px !important;
     }
 
     .name {
@@ -28,7 +28,7 @@
     }
 
     .speaker {
-      padding-top: 5px !important;
+      padding-top: 2px !important;
     }
 
     .date {
@@ -165,40 +165,25 @@
     }
   </style>
   </head>
-  <body class="background-pdf-image" style="">
+  <body style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
     <main>
       <div class="row m-60">
         <div class="col-12" style="text-align: center;">
-          <%#= wicked_pdf_image_tag "first.png" %>
+          <%= wicked_pdf_image_tag "first.png" %>
           
         </div>        
       </div>
       <div class="row">
         <div class="col-12" style="text-align: center;">
-            
-            <p style="color: #0A3359;font-weight: bold;" class="name"><%= name%></p>
-            <%#= wicked_pdf_image_tag "second.png" %>
-          
+          <div class="ml-220" style="border: 2px solid red;border-radius: 8px;">
+            <p style="color: #0A3359;font-weight: bold;">This Certificate Is Proudly Presented To <u><%= name %></u> For Participation In<br> Modern Talk - A National Webinar On <u><%= topic %></u> <br> By <u><%= speaker %></u> Organized On <u><%= date %></u><br></p>
+            <%= wicked_pdf_image_tag "second.png" %>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <p style="color: #0A3359;font-weight: bold; " class="topic"><%= topic %></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12" style="width: 900px !important;">
-          <p style="color: #0A3359;font-weight: bold;" class="speaker"><%= speaker %><% (0..206-speaker.length).each do |index|%> &nbsp;<% end %><%= date %></p>
-          
-        </div>
-        <div class="col-6">
-          
-        </div>
-      </div>
-      
       <div class="row m-60">
         <div class="col-12" style="text-align: center;">
-          <%#= wicked_pdf_image_tag "third.png" %>
+          <%= wicked_pdf_image_tag "third.png" %>
         </div>        
       </div>
     </main>
